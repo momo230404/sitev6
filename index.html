@@ -15,25 +15,35 @@
 </head>
 <body class="text-white text-center">
 
-  <header class="h-screen flex flex-col justify-center items-center px-6 bg-[#0a0a0a] bg-opacity-90 shadow-inner relative">
-    <img src="mon-agent.png"/>
-    <h1 id="typed-title" class="text-5xl md:text-7xl font-bold mb-4 tracking-wide bg-gradient-to-r from-[#9F8BFF] to-[#846AFF] text-transparent bg-clip-text">&nbsp;</h1>
-<script>
-  const txt = "MON AGENT IA";
-  let i = 0;
-  const speed = 120;
-  function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("typed-title").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
+ <header class="h-screen flex flex-col justify-center items-center px-6 bg-[#0a0a0a] bg-opacity-90 shadow-inner relative">
+  <img src="mon-agent.png" alt="Mascotte IA" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-20 blur-lg max-w-[280px] z-0" />
+
+  <h1 id="typed-title" class="relative z-10 text-5xl md:text-7xl font-bold mb-4 tracking-wide bg-gradient-to-r from-[#9F8BFF] to-[#846AFF] text-transparent bg-clip-text">
+    &nbsp;
+  </h1>
+
+  <script>
+    const txt = "DIVISION IA";
+    let i = 0;
+    const speed = 120;
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("typed-title").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
     }
-  }
-  window.addEventListener("DOMContentLoaded", typeWriter);
-</script>
-    <p class="text-lg md:text-xl text-blue-300 max-w-xl mb-10 italic">Une cellule d’élite composée d’agents IA autonomes. Silencieux. Précis. Inarrêtables.</p>
-    <a href="#mission" class="bg-gradient-to-br from-white to-[#dce3ff] text-black px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:scale-105 transition hover:shadow-2xl">Lancer la mission</a>
-  </header>
+    window.addEventListener("DOMContentLoaded", typeWriter);
+  </script>
+
+  <p class="text-lg md:text-xl text-blue-300 max-w-xl mb-10 italic relative z-10">
+    Une cellule d’élite composée d’agents IA autonomes. Silencieux. Précis. Inarrêtables.
+  </p>
+
+  <a href="#mission" class="bg-gradient-to-br from-white to-[#dce3ff] text-black px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:scale-105 transition hover:shadow-2xl relative z-10">
+    Lancer la mission
+  </a>
+</header>
 
   <section id="mission" class="py-24 px-6 bg-[#12141a]">
     <h2 class="text-4xl font-bold mb-6 text-[#D6E0F5]">🎯 Mission : infiltration numérique</h2>
